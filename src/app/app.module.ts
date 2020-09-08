@@ -8,13 +8,15 @@ import { MaterialModule } from "./material/material.module";
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { NavTabsComponent } from './nav-tabs/nav-tabs.component';
+import { DashboardCardComponent } from './dashboard-card/dashboard-card.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     DashboardComponent,
     NavbarComponent,
-    NavTabsComponent
+    NavTabsComponent,
+    DashboardCardComponent
   ],
   imports: [
     BrowserModule,

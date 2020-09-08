@@ -9,6 +9,7 @@ import { DashboardSpinnerComponent } from "../dashboard-spinner/dashboard-spinne
 })
 export class DashboardCardComponent implements OnInit {
 
+  spinners: [1, 2, 3, 4]
   constructor() { }
 
   ngOnInit(): void {

@@ -9,6 +9,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { NavTabsComponent } from './nav-tabs/nav-tabs.component';
 import { DashboardCardComponent } from './dashboard-card/dashboard-card.component';
+import { DashboardSpinnerComponent } from './dashboard-spinner/dashboard-spinner.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { DashboardCardComponent } from './dashboard-card/dashboard-card.componen
     DashboardComponent,
     NavbarComponent,
     NavTabsComponent,
-    DashboardCardComponent
+    DashboardCardComponent,
+    DashboardSpinnerComponent
   ],
   imports: [
     BrowserModule,

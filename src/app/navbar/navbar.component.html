@@ -1,13 +1,21 @@
 <mat-toolbar>
-  <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
-    <mat-icon>menu</mat-icon>
-  </button>
-  <span>My App</span>
-  <span class="example-spacer"></span>
-  <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
-    <mat-icon>favorite</mat-icon>
-  </button>
-  <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
-    <mat-icon>share</mat-icon>
-  </button>
+  <span class="example-icon" aria-label="Example icon-button with menu icon">
+    <!-- <mat-icon>menu</mat-icon> -->
+    <img src="../../assets/des-logo.png" class="logo" alt="des-logo">
+  </span>
+
+  <span class="nav-list">
+    <span>Dashboard</span>
+    <span>Paper Allocation</span>
+    <span>Manage Users</span>
+  </span>
+
+  <span>
+    <button class="example-icon notification-btn" aria-label="Example icon-button with heart icon">
+      <img src="../../assets/notification.png" alt="notification" class="notification-img">
+    </button>
+    <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+      <mat-icon>share</mat-icon>
+    </button>
+  </span>
 </mat-toolbar>

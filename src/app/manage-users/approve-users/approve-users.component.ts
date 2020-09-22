@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./approve-users.component.scss']
 })
 export class ApproveUsersComponent implements OnInit {
+  displayedColumns = ['approve', 'name', 'username', 'emailId'];
+  dataSource = ELEMENT_DATA;
 
   constructor() { }
 
@@ -13,3 +15,23 @@ export class ApproveUsersComponent implements OnInit {
   }
 
 }
+
+export interface PeriodicElement {
+  name: string;
+  username: string;
+  emailId: string;
+}
+
+const ELEMENT_DATA: PeriodicElement[] = [
+  {name: 'Hydrogen', username: 'abc', emailId: 'abc@abc.com'},
+  {name: 'Hydrogen', username: 'abc', emailId: 'abc@abc.com'},
+  {name: 'Hydrogen', username: 'abc', emailId: 'abc@abc.com'},
+  {name: 'Hydrogen', username: 'abc', emailId: 'abc@abc.com'},
+  {name: 'Hydrogen', username: 'abc', emailId: 'abc@abc.com'},
+  {name: 'Hydrogen', username: 'abc', emailId: 'abc@abc.com'},
+  {name: 'Hydrogen', username: 'abc', emailId: 'abc@abc.com'},
+  {name: 'Hydrogen', username: 'abc', emailId: 'abc@abc.com'},
+  {name: 'Hydrogen', username: 'abc', emailId: 'abc@abc.com'},
+  {name: 'Hydrogen', username: 'abc', emailId: 'abc@abc.com'},
+  {name: 'Hydrogen', username: 'abc', emailId: 'abc@abc.com'},
+];

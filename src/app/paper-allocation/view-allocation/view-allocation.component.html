@@ -1,1 +1,35 @@
-<p>view-allocation works!</p>
+<div class="containar">
+  <H2><span>View Allocation : </span><b>Software Engineering and Project Management - December 2019</b></H2>
+
+  <div class="example-container mat-elevation-z8">
+    <table mat-table [dataSource]="dataSource">
+
+      <!-- Position Column -->
+      <ng-container matColumnDef="name">
+        <th mat-header-cell *matHeaderCellDef> Name</th>
+        <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+      </ng-container>
+
+      <!-- Name Column -->
+      <ng-container matColumnDef="paperUploadStatus">
+        <th mat-header-cell *matHeaderCellDef> paper Upload Status</th>
+        <td mat-cell *matCellDef="let element"> {{element.paperUploadStatus}} </td>
+      </ng-container>
+
+      <!-- Weight Column -->
+      <ng-container matColumnDef="viewPaper">
+        <th mat-header-cell *matHeaderCellDef> View Paper</th>
+        <td mat-cell *matCellDef="let element"><a href="#">{{element.viewPaper}}</a> </td>
+      </ng-container>
+
+      <!-- Symbol Column -->
+      <ng-container matColumnDef="approve">
+        <th mat-header-cell *matHeaderCellDef> Approve</th>
+        <td mat-cell *matCellDef="let element"> {{element.approve}} </td>
+      </ng-container>
+
+      <tr mat-header-row *matHeaderRowDef="displayedColumns; sticky: true"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+    </table>
+  </div>
+</div>

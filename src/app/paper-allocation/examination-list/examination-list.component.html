@@ -1,4 +1,4 @@
-<div class="container-fluid">
+<div class="containar">
   <div class="example-container mat-elevation-z8">
     <table mat-table [dataSource]="dataSource">
 
@@ -33,12 +33,12 @@
 
       <ng-container matColumnDef="Paper Setting status">
         <th mat-header-cell *matHeaderCellDef> Paper Setting status</th>
-        <td mat-cell *matCellDef="let element"> {{element.paperSettingStatus}} </td>
+        <td mat-cell *matCellDef="let element"><a href="#">{{element.paperSettingStatus}}</a>  </td>
       </ng-container>
 
       <ng-container matColumnDef="Allocate">
         <th mat-header-cell *matHeaderCellDef> Allocate</th>
-        <td mat-cell *matCellDef="let element"> {{element.allocate}} </td>
+        <td mat-cell *matCellDef="let element"><a href="#">{{element.allocate}}</a> </td>
       </ng-container>
 
       <tr mat-header-row *matHeaderRowDef="displayedColumns; sticky: true"></tr>

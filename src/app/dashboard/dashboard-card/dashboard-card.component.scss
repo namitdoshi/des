@@ -19,4 +19,14 @@
     font-size: 1.15rem;
     text-align: center;
   }
+
+  .spinner-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: #038081;
+    font-weight: 600;
+    font-size: 14px;
+  }
 }

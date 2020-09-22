@@ -5,9 +5,43 @@
   </mat-card-header>
   <mat-card-content>
     <div class="row"> 
-      <div class="col-6" *ngFor="let i of [].constructor(4)">
-        <app-dashboard-spinner ></app-dashboard-spinner>
+      <div class="col-6 spinner-container">
+        <span>
+          <app-dashboard-spinner ></app-dashboard-spinner>
+          <div style="position:relative; top: -45px; left: 35px; font-weight: bold;">
+            50%
+        </div>
+        </span>
+        <span>Assigned for <br> Scanning</span>
       </div>
+      <div class="col-6 spinner-container">
+        <span>
+          <app-dashboard-spinner ></app-dashboard-spinner>
+          <div style="position:relative; top: -45px; left: 35px; font-weight: bold;">
+            50%
+          </div>
+        </span>
+        <span>Scanned</span>
+      </div>
+      <div class="col-6 spinner-container">
+        <span>
+          <app-dashboard-spinner ></app-dashboard-spinner>
+          <div style="position:relative; top: -45px; left: 35px; font-weight: bold;">
+            50%
+          </div>
+        </span>
+        <span>Assigned <br> for <br> Evaluation</span>
+      </div>
+      <div class="col-6 spinner-container">
+        <span>
+          <app-dashboard-spinner ></app-dashboard-spinner>
+          <div style="position:relative; top: -45px; left: 35px; font-weight: bold;">
+            50%
+          </div>
+        </span>
+        <span>Assigned <br> for <br> Evaluation</span>
+      </div>
+      
     </div>
     
   </mat-card-content>

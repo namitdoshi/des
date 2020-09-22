@@ -10,7 +10,7 @@ import {ProgressSpinnerMode} from '@angular/material/progress-spinner';
 })
 export class DashboardSpinnerComponent implements OnInit {
 
-  color: ThemePalette = 'primary';
+  // color: ThemePalette = 'primary';
   mode: ProgressSpinnerMode = 'determinate';
   value = 50;
 

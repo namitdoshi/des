@@ -7,20 +7,18 @@ import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from "./material/material.module";
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { NavbarComponent } from './navbar/navbar.component';
-import { NavTabsComponent } from './navbar/nav-tabs/nav-tabs.component';
 import { DashboardCardComponent } from './dashboard/dashboard-card/dashboard-card.component';
 import { DashboardSpinnerComponent } from './dashboard/dashboard-spinner/dashboard-spinner.component';
-import { ActiveExamsComponent } from './dashboard/active-exams/active-exams.component';
+import { DasboardTabsComponent } from './dashboard/dasboard-tabs/dasboard-tabs.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     DashboardComponent,
     NavbarComponent,
-    NavTabsComponent,
     DashboardCardComponent,
     DashboardSpinnerComponent,
-    ActiveExamsComponent
+    DasboardTabsComponent
   ],
   imports: [
     BrowserModule,

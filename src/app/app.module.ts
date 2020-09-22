@@ -10,6 +10,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { DashboardCardComponent } from './dashboard/dashboard-card/dashboard-card.component';
 import { DashboardSpinnerComponent } from './dashboard/dashboard-spinner/dashboard-spinner.component';
 import { DasboardTabsComponent } from './dashboard/dasboard-tabs/dasboard-tabs.component';
+import { PaperAllocationComponent } from './paper-allocation/paper-allocation.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { DasboardTabsComponent } from './dashboard/dasboard-tabs/dasboard-tabs.c
     NavbarComponent,
     DashboardCardComponent,
     DashboardSpinnerComponent,
-    DasboardTabsComponent
+    DasboardTabsComponent,
+    PaperAllocationComponent
   ],
   imports: [
     BrowserModule,

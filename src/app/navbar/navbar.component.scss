@@ -7,6 +7,13 @@ mat-toolbar {
   .nav-list {
     span {
       margin-right: 2.5rem;
+
+      a { color: inherit; } 
+
+    }
+
+    .active {
+      color: #038081 !important;
     }
   }
 

@@ -11,6 +11,7 @@ import { DashboardCardComponent } from './dashboard/dashboard-card/dashboard-car
 import { DashboardSpinnerComponent } from './dashboard/dashboard-spinner/dashboard-spinner.component';
 import { DasboardTabsComponent } from './dashboard/dasboard-tabs/dasboard-tabs.component';
 import { PaperAllocationComponent } from './paper-allocation/paper-allocation.component';
+import { ManageUsersComponent } from './manage-users/manage-users.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { PaperAllocationComponent } from './paper-allocation/paper-allocation.co
     DashboardCardComponent,
     DashboardSpinnerComponent,
     DasboardTabsComponent,
-    PaperAllocationComponent
+    PaperAllocationComponent,
+    ManageUsersComponent
   ],
   imports: [
     BrowserModule,

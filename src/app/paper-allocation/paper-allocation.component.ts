@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
+import { ExaminationListComponent } from './examination-list/examination-list.component';
 @Component({
   selector: 'app-paper-allocation',
   templateUrl: './paper-allocation.component.html',

@@ -1,8 +1,7 @@
 .example-container {
-  height: 350px;
+  height: 100%;
   overflow: auto;
   border-radius: 25px !important;
-
 }
 
 table {
@@ -62,7 +61,7 @@ td a {
 .containar {
   position: relative;
   width: 92%;
-  height: 500px;
+  height: 50%;
   margin-left: 50px;
   margin-right: 50px;
   background-color: #F3FCFC;

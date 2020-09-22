@@ -12,6 +12,12 @@ import { DashboardSpinnerComponent } from './dashboard/dashboard-spinner/dashboa
 import { DasboardTabsComponent } from './dashboard/dasboard-tabs/dasboard-tabs.component';
 import { PaperAllocationComponent } from './paper-allocation/paper-allocation.component';
 import { ManageUsersComponent } from './manage-users/manage-users.component';
+import { ExaminationListComponent } from './paper-allocation/examination-list/examination-list.component';
+import { AllocateExaminationComponent } from './paper-allocation/allocate-examination/allocate-examination.component';
+import { ViewAllocationComponent } from './paper-allocation/view-allocation/view-allocation.component';
+import { ApproveUsersComponent } from './manage-users/approve-users/approve-users.component';
+import { AdminUsersComponent } from './manage-users/admin-users/admin-users.component';
+import { UserDetailsComponent } from './manage-users/user-details/user-details.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +28,13 @@ import { ManageUsersComponent } from './manage-users/manage-users.component';
     DashboardSpinnerComponent,
     DasboardTabsComponent,
     PaperAllocationComponent,
-    ManageUsersComponent
+    ManageUsersComponent,
+    ExaminationListComponent,
+    AllocateExaminationComponent,
+    ViewAllocationComponent,
+    ApproveUsersComponent,
+    AdminUsersComponent,
+    UserDetailsComponent
   ],
   imports: [
     BrowserModule,

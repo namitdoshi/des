@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-import { DashboardCardComponent } from "../dashboard-card/dashboard-card.component";
+import { DashboardCardComponent } from "../../dashboard/dashboard-card/dashboard-card.component";
 
 @Component({
   selector: 'app-nav-tabs',

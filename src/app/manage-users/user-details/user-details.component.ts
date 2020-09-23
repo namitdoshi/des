@@ -13,8 +13,6 @@ export class UserDetailsComponent implements OnInit {
   ];
   hide = true;
 
-  hide = true;
-  
   constructor() { }
 
   ngOnInit(): void {

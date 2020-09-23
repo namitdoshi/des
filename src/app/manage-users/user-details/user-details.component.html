@@ -23,8 +23,12 @@
       </div>
       <div class="row field-container">
         <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+          <!-- <label for="password" class="form-label">Password</label> <br>
+          <input type="password" id="password" placeholder="Type your password here" class="form-field"> -->
           <label for="password" class="form-label">Password</label> <br>
-          <input type="password" id="password" placeholder="Type your password here" class="form-field">
+          <input placeholder="Password" [type]="hide ? 'password' : 'text'" formControlName="password" class="form-field" required>
+          <mat-icon matSuffix (click)="hide = !hide">{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+
         </div>
         <div class="col-12 col-sm-12 col-md-6 col-lg-6">
           <label for="status" class="form-label">Status</label> <br>

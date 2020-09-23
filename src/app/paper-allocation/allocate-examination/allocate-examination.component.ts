@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./allocate-examination.component.scss']
 })
 export class AllocateExaminationComponent implements OnInit {
+  displayedColumns = ['name', 'action'];
+  dataSource = ELEMENT_DATA1;
 
   constructor() { }
 
@@ -13,3 +15,26 @@ export class AllocateExaminationComponent implements OnInit {
   }
 
 }
+
+export interface PeriodicElement1 {
+  name: string;
+}
+
+const ELEMENT_DATA1: PeriodicElement1[] = [
+  {name: 'EVALUATOR'},
+  {name: 'EVALUATOR'},
+  {name: 'EVALUATOR'},
+  {name: 'EVALUATOR'},
+  {name: 'EVALUATOR'},
+  {name: 'EVALUATOR'},
+  {name: 'EVALUATOR'},
+  {name: 'EVALUATOR'},
+  {name: 'EVALUATOR'},
+  {name: 'EVALUATOR'},
+  {name: 'EVALUATOR'},
+  {name: 'EVALUATOR'},
+  {name: 'EVALUATOR'},
+  {name: 'EVALUATOR'},
+  {name: 'EVALUATOR'},
+  {name: 'EVALUATOR'},
+];

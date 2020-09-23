@@ -5,7 +5,7 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
-import { MaterialModule } from "./material/material.module";
+import { MaterialModule } from './material/material.module';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { DashboardCardComponent } from './dashboard/dashboard-card/dashboard-card.component';
@@ -19,6 +19,8 @@ import { ViewAllocationComponent } from './paper-allocation/view-allocation/view
 import { ApproveUsersComponent } from './manage-users/approve-users/approve-users.component';
 import { AdminUsersComponent } from './manage-users/admin-users/admin-users.component';
 import { UserDetailsComponent } from './manage-users/user-details/user-details.component';
+import { AuthComponent } from './auth/auth.component';
+import {AuthRoutingModule} from './auth/auth-routing.module';
 
 @NgModule({
   declarations: [
@@ -35,10 +37,12 @@ import { UserDetailsComponent } from './manage-users/user-details/user-details.c
     ViewAllocationComponent,
     ApproveUsersComponent,
     AdminUsersComponent,
-    UserDetailsComponent
+    UserDetailsComponent,
+    AuthComponent
   ],
   imports: [
     BrowserModule,
+    AuthRoutingModule,
     AppRoutingModule,
     NoopAnimationsModule,
     MaterialModule,

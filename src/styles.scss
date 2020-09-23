@@ -25,3 +25,12 @@ mat-ink-bar {
 .mat-tab-labels {
   margin: 0 6.7rem;
 }
+
+.mat-form-field-underline{
+  display: none !important;
+}
+
+.mat-form-field-appearance-fill .mat-form-field-flex {
+  padding: 0 !important;
+  background-color: transparent !important;
+}

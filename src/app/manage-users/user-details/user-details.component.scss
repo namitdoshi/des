@@ -4,7 +4,7 @@
   box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.135216);
   border-radius: 13px;
   padding: 2.2rem 6.625rem;
-  
+
   .field-container {
     margin-top: 3rem;
 
@@ -17,16 +17,26 @@
       color: #038081;
       background: #F3FCFC;
     }
-  
+
     input[type="text"].form-field::-webkit-input-placeholder {
       color: #038081;
     }
-  
+
+    input[type="email"].form-field::-webkit-input-placeholder {
+      color: #038081;
+    }
+    .mat-input-element {
+      color: #038081 !important;
+    }
+
     .form-label {
       font-weight: 700;
       font-size: 20px;
       margin-bottom: 14px;
     }
-  } 
-  
+  }
+
+  mat-icon {
+    cursor: pointer !important;
+  }
 }

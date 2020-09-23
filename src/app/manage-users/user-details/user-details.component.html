@@ -2,36 +2,65 @@
   <div class="col-sm-12 col-md-12 col-lg-12">
     <mat-card class="example-card">
       <div class="row field-container">
+
         <div class="col-6">
-          <label for="fname" class="form-label">Full Name</label> <br>
-          <input type="text" id="fname" placeholder="Type your name here" class="form-field">
+          <label for="name" class="form-label">Full Name</label> <br>
+          <input type="text" id="name" placeholder="Type your name here" class="form-field">
         </div>
+
         <div class="col-6">
-          <label for="fname" class="form-label">Full Name</label> <br>
-          <input type="text" id="fname" placeholder="Type your name here" class="form-field">
+          <label for="username" class="form-label">Username</label> <br>
+          <input type="text" id="username" placeholder="Type your username here" class="form-field">
         </div>
+
       </div>
+
       <div class="row field-container">
         <div class="col-6">
-          <label for="fname" class="form-label">Full Name</label> <br>
-          <input type="text" id="fname" placeholder="Type your name here" class="form-field">
+          <label for="email" class="form-label">Email</label> <br>
+          <input type="email" id="email" placeholder="Type your Email here" class="form-field">
         </div>
+
         <div class="col-6">
-          <label for="fname" class="form-label">Full Name</label> <br>
-          <input type="text" id="fname" placeholder="Type your name here" class="form-field">
+          <label for="role" class="form-label">Role</label> <br>
+          <mat-form-field appearance="fill" class="form-field">
+            <mat-label>Select Your Role..</mat-label>
+            <mat-select id="role">
+              <mat-option *ngFor="let food of foods" [value]="food.value">
+                {{food.viewValue}}
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
         </div>
+
       </div>
+
       <div class="row field-container">
+
         <div class="col-6">
-          <label for="fname" class="form-label">Full Name</label> <br>
-          <input type="text" id="fname" placeholder="Type your name here" class="form-field">
+          <label for="pswrd" class="form-label">Password</label> <br>
+          <mat-form-field class="form-field">
+            <input matInput id="pswrd" placeholder="Type Password here.." [type]="hide ? 'password' : 'text'" formControlName="password"
+                    required>
+            <mat-icon matSuffix (click)="hide = !hide">{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+          </mat-form-field>
         </div>
+
         <div class="col-6">
-          <label for="fname" class="form-label">Full Name</label> <br>
-          <input type="text" id="fname" placeholder="Type your name here" class="form-field">
+          <div class="col-6">
+            <label for="status" class="form-label">Status</label> <br>
+            <mat-form-field appearance="fill" class="form-field">
+              <mat-label>Select Your Status..</mat-label>
+              <mat-select id="status">
+                <mat-option *ngFor="let food of foods" [value]="food.value">
+                  {{food.viewValue}}
+                </mat-option>
+              </mat-select>
+            </mat-form-field>
+          </div>
         </div>
       </div>
     </mat-card>
-    
+
   </div>
 </div>

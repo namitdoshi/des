@@ -34,4 +34,13 @@ const ELEMENT_DATA: PeriodicElement[] = [
   {name: 'Oxygen', paperUploadStatus: 'uploaded', viewPaper: 'View/ Download', approve: 'Approved'},
   {name: 'Fluorine', paperUploadStatus: 'uploaded', viewPaper: 'View/ Download', approve: 'Approved'},
   {name: 'Neon', paperUploadStatus: 'uploaded', viewPaper: 'View/ Download', approve: 'Approved'},
+  {name: 'Fluorine', paperUploadStatus: 'uploaded', viewPaper: 'View/ Download', approve: 'Approved'},
+  {name: 'Neon', paperUploadStatus: 'uploaded', viewPaper: 'View/ Download', approve: 'Approved'},
+  {name: 'Carbon', paperUploadStatus: 'uploaded', viewPaper: 'View/ Download', approve: 'Approved'},
+  {name: 'Nitrogen', paperUploadStatus: 'uploaded', viewPaper: 'View/ Download', approve: 'Approved'},
+  {name: 'Oxygen', paperUploadStatus: 'uploaded', viewPaper: 'View/ Download', approve: 'Approved'},
+  {name: 'Fluorine', paperUploadStatus: 'uploaded', viewPaper: 'View/ Download', approve: 'Approved'},
+  {name: 'Neon', paperUploadStatus: 'uploaded', viewPaper: 'View/ Download', approve: 'Approved'},
+  {name: 'Fluorine', paperUploadStatus: 'uploaded', viewPaper: 'View/ Download', approve: 'Approved'},
+  {name: 'Neon', paperUploadStatus: 'uploaded', viewPaper: 'View/ Download', approve: 'Approved'},
 ];

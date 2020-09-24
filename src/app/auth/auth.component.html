@@ -1,13 +1,13 @@
-<div class="row">
+<div class="row no-gutters">
 
-  <div class="column">
+  <div class="col-md-6 logo-img">
     <div class="logo">
-      <img alt="" class="logo" src="assets/des-logo.png">
+      <img alt="" class="logo col-12" src="assets/des-logo.png">
     </div>
-    <div><img alt="" class="left-bg" src="assets/Log In_Teal.png"></div>
+    <div><img alt="" class="left-bg col-12" src="assets/Log In_Teal.png"></div> 
   </div>
 
-  <div class="column2">
+  <div class="col-md-6 form-container">
 
     <h2>WELCOME USER</h2>
     <div class="example-container" >
@@ -30,11 +30,13 @@
         </div>
 
         <div class="form-group form-check">
-          <input class="form-check-input" id="Keep me signed in" type="checkbox">
-          <label class="form-check-label" for="Keep me signed in">Keep me signed in</label>
-          <small class="form-text" id="emailHelp">Already a member</small>
+          <input class="form-check-input" id="Keep-me-signed-in" type="checkbox">
+          <label class="form-check-label" for="Keep-me-signed-in">Keep me signed in</label>
+          <span class="form-text" id="emailHelp">Already a member</span>
         </div>
-        <button class="btn" type="submit">Submit</button>
+        <div class="btn-cnt">
+          <a routerLink='/dashboard' class="btn"><button type="submit">Submit</button></a>  
+        </div>
       </form>
     </div>
   </div>

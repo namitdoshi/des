@@ -1,6 +1,7 @@
 <app-navbar></app-navbar>
 
 <mat-tab-group animationDuration="0ms">
+
   <mat-tab label="Approve Users">
     <div class="row no-gutters">
       <div class="col-md-12 col-sm-12">
@@ -9,12 +10,19 @@
     </div>
   </mat-tab>
 
-  <mat-tab label="Admin Users"><app-admin-users></app-admin-users></mat-tab>
-  <mat-tab label="User Details"><app-user-details></app-user-details></mat-tab>
+  <mat-tab label="Admin Users">
+    <app-admin-users></app-admin-users>
+  </mat-tab>
 
-  <!-- <button mat-button color='primary'><mat-tab label='sada'></mat-tab></button> -->
+  <mat-tab label="User Details">
+    <app-user-details></app-user-details>
+  </mat-tab>
 
-  <mat-tab disabled class="add-user-btn" > <ng-template mat-tab-label> <button mat-icon-button> Add New User </button> </ng-template> </mat-tab>
+  <mat-tab disabled class="add-user-btn">
+    <ng-template mat-tab-label>
+      <button mat-icon-button> Add New User</button>
+    </ng-template>
+  </mat-tab>
 
 </mat-tab-group>
 

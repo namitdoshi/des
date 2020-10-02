@@ -19,11 +19,6 @@ import { ViewAllocationComponent } from './paper-allocation/view-allocation/view
 import { ApproveUsersComponent } from './manage-users/approve-users/approve-users.component';
 import { AdminUsersComponent } from './manage-users/admin-users/admin-users.component';
 import { UserDetailsComponent } from './manage-users/user-details/user-details.component';
-import { AuthComponent } from './auth/auth.component';
-
-// Routing Modules
-import {AuthRoutingModule} from './auth/auth-routing.module';
-// import { SuperAdminRoutingModule } from "./super-admin/super-admin.routing.modules";
 
 @NgModule({
   declarations: [
@@ -41,11 +36,9 @@ import {AuthRoutingModule} from './auth/auth-routing.module';
     ApproveUsersComponent,
     AdminUsersComponent,
     UserDetailsComponent,
-    AuthComponent
   ],
   imports: [
     BrowserModule,
-    AuthRoutingModule,
     AppRoutingModule,
     NoopAnimationsModule,
     MaterialModule,
@@ -53,6 +46,7 @@ import {AuthRoutingModule} from './auth/auth-routing.module';
     ReactiveFormsModule
   ],
   providers: [],
+  exports: [MaterialModule],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

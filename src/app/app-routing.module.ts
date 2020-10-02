@@ -9,7 +9,8 @@ const routes: Routes = [
   { path: 'dashboard', component: DashboardComponent},
   { path: 'paper-allocation', component: PaperAllocationComponent},
   { path: 'manage-users', component: ManageUsersComponent},
-  { path: 'super-admin', loadChildren: () => import('./super-admin/super-admin.module').then(m => m.SuperAdminModule)}
+  { path: 'super-admin', loadChildren: () => import('./super-admin/super-admin.module').then(m => m.SuperAdminModule)},
+  { path: '', loadChildren: () => import('./auth/auth.module').then(m => m.AuthModule)}
   // { path: '', redirectTo: 'dashboard', pathMatch: 'full' }
 
 ];

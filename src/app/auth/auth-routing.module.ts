@@ -5,12 +5,11 @@ import {AuthComponent} from './auth.component';
 
 const routes: Routes = [
   { path: '', pathMatch: 'full' , component: AuthComponent},
-  // { path: '', redirectTo: 'dashboard', pathMatch: 'full' }
 
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
 export class AuthRoutingModule { }

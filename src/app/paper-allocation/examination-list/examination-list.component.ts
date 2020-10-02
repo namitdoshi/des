@@ -37,7 +37,7 @@ for ( let i = 0; i < 20 ; i++){
     allocate: 'string'
 });
 }
-console.log(a);
+// console.log(a);
 const ELEMENT_DATA: PeriodicElement[] = [
   ...a
 ];

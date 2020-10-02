@@ -2,78 +2,80 @@
   <div class="col-sm-12 col-md-12 col-lg-12">
     <mat-card class="example-card">
 
-      <div class="row field-container">
+      <form [formGroup]="userDetail" (ngSubmit)='onSubmit()'>
+        <div class="row field-container">
 
-        <div class="col-6">
-          <label for="name" class="form-label">Full Name</label> <br>
-          <mat-form-field class="form-field">
-            <input matInput type="text" id="name" placeholder="Type your name here">
-          </mat-form-field>
-        </div>
-
-        <div class="col-6">
-          <label for="username" class="form-label">Username</label> <br>
-          <mat-form-field class="form-field">
-            <input matInput type="text" id="username" placeholder="Type your username here">
-          </mat-form-field>
-        </div>
-
-      </div>
-
-      <div class="row field-container">
-
-        <div class="col-6">
-          <label for="email" class="form-label">Email</label> <br>
-          <mat-form-field class="form-field">
-            <input matInput type="email" id="email" placeholder="Type your Email here">
-          </mat-form-field>
-        </div>
-
-        <div class="col-6">
-          <label for="role" class="form-label">Role</label> <br>
-          <mat-form-field appearance="fill" class="form-field">
-            <mat-label>Select Your Role..</mat-label>
-            <mat-select id="role">
-              <mat-option *ngFor="let food of foods" [value]="food.value">
-                {{food.viewValue}}
-              </mat-option>
-            </mat-select>
-          </mat-form-field>
-        </div>
-
-      </div>
-
-      <div class="row field-container">
-
-        <div class="col-6">
-          <label for="pswrd" class="form-label">Password</label> <br>
-          <mat-form-field class="form-field">
-            <input matInput id="pswrd" placeholder="Type Password here.." [type]="hide ? 'password' : 'text'"
-                   formControlName="password"
-                   required>
-            <mat-icon matSuffix (click)="hide = !hide">{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
-          </mat-form-field>
-        </div>
-
-        <div class="col-6">
           <div class="col-6">
-            <label for="status" class="form-label">Status</label> <br>
+            <label for="name" class="form-label">Full Name</label> <br>
+            <mat-form-field class="form-field">
+              <input matInput type="text" id="name" placeholder="Type your name here" formControlName="name">
+            </mat-form-field>
+          </div>
+  
+          <div class="col-6">
+            <label for="username" class="form-label">Username</label> <br>
+            <mat-form-field class="form-field">
+              <input matInput type="text" id="username" placeholder="Type your username here" formControlName="username">
+            </mat-form-field>
+          </div>
+  
+        </div>
+  
+        <div class="row field-container">
+  
+          <div class="col-6">
+            <label for="email" class="form-label">Email</label> <br>
+            <mat-form-field class="form-field">
+              <input matInput type="email" id="email" placeholder="Type your Email here" formControlName="email">
+            </mat-form-field>
+          </div>
+  
+          <div class="col-6">
+            <label for="role" class="form-label">Role</label> <br>
             <mat-form-field appearance="fill" class="form-field">
-              <mat-label>Select Your Status..</mat-label>
-              <mat-select id="status">
+              <mat-label>Select Your Role..</mat-label>
+              <mat-select id="role" formControlName="role">
                 <mat-option *ngFor="let food of foods" [value]="food.value">
                   {{food.viewValue}}
                 </mat-option>
               </mat-select>
             </mat-form-field>
           </div>
+  
         </div>
-
-      </div>
-
-      <div class="row field-container btn-container">
-        <button mat-raised-button class="allocate">Save User</button>
-      </div>
+  
+        <div class="row field-container">
+  
+          <div class="col-6">
+            <label for="pswrd" class="form-label">Password</label> <br>
+            <mat-form-field class="form-field">
+              <input matInput id="pswrd" placeholder="Type Password here.." [type]="hide ? 'password' : 'text'"
+                     formControlName="password"
+                     required>
+              <mat-icon matSuffix (click)="hide = !hide">{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+            </mat-form-field>
+          </div>
+  
+          <div class="col-6">
+            <div class="col-6">
+              <label for="status" class="form-label">Status</label> <br>
+              <mat-form-field appearance="fill" class="form-field">
+                <mat-label>Select Your Status..</mat-label>
+                <mat-select id="status" formControlName="status">
+                  <mat-option *ngFor="let food of foods" [value]="food.value">
+                    {{food.viewValue}}
+                  </mat-option>
+                </mat-select>
+              </mat-form-field>
+            </div>
+          </div>
+  
+        </div>
+  
+        <div class="row field-container btn-container">
+          <button mat-raised-button class="allocate">Save User</button>
+        </div>
+      </form>
 
     </mat-card>
   </div>

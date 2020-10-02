@@ -9,6 +9,7 @@ const routes: Routes = [
   { path: 'dashboard', component: DashboardComponent},
   { path: 'paper-allocation', component: PaperAllocationComponent},
   { path: 'manage-users', component: ManageUsersComponent},
+  { path: 'super-admin', loadChildren: './super-admin/super-admin.module#SuperAdminModule'}
   // { path: '', redirectTo: 'dashboard', pathMatch: 'full' }
 
 ];

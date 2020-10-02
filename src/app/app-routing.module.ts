@@ -6,7 +6,10 @@ import { ManageUsersComponent } from './super-admin/manage-users/manage-users.co
 import { PaperAllocationComponent } from './super-admin/paper-allocation/paper-allocation.component';
 
 const routes: Routes = [
-  { path: 'super-admin', loadChildren: () => import('./super-admin/super-admin.module').then(m => m.SuperAdminModule)},
+  { path: 'sa', loadChildren: () => import('./super-admin/super-admin.module').then(m => m.SuperAdminModule)},
+  // { path: 'evaluator', loadChildren: () => import('./super-admin/super-admin.module').then(m => m.SuperAdminModule)},
+  // { path: 'scanner', loadChildren: () => import('./super-admin/super-admin.module').then(m => m.SuperAdminModule)},
+  // { path: 'admin', loadChildren: () => import('./super-admin/super-admin.module').then(m => m.SuperAdminModule)},
   { path: '', loadChildren: () => import('./auth/auth.module').then(m => m.AuthModule)}
   // { path: '', redirectTo: 'dashboard', pathMatch: 'full' }
 

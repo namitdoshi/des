@@ -12,7 +12,7 @@ export class DashboardSpinnerComponent implements OnInit {
 
   // color: ThemePalette = 'primary';
   mode: ProgressSpinnerMode = 'determinate';
-  value = 50;
+  value = 55;
 
   constructor() { }
 

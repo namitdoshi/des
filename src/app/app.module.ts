@@ -18,7 +18,7 @@ import { MaterialModule } from './material/material.module';
     ReactiveFormsModule
   ],
   providers: [],
-  exports: [MaterialModule],
+  exports: [MaterialModule, ReactiveFormsModule],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -17,6 +17,7 @@ import {ViewAllocationComponent} from './paper-allocation/view-allocation/view-a
 import {ApproveUsersComponent} from './manage-users/approve-users/approve-users.component';
 import {AdminUsersComponent} from './manage-users/admin-users/admin-users.component';
 import {UserDetailsComponent} from './manage-users/user-details/user-details.component';
+import { MaterialModule } from '../material/material.module'
 
 
 
@@ -40,7 +41,8 @@ import {UserDetailsComponent} from './manage-users/user-details/user-details.com
   imports: [
     CommonModule,
     ReactiveFormsModule,
-    SuperAdminRoutingModule
+    SuperAdminRoutingModule,
+    MaterialModule
   ],
   exports: [
     AppComponent,

@@ -21,6 +21,13 @@ import { AdminUsersComponent } from './manage-users/admin-users/admin-users.comp
 import { UserDetailsComponent } from './manage-users/user-details/user-details.component';
 import { AuthComponent } from './auth/auth.component';
 import {AuthRoutingModule} from './auth/auth-routing.module';
+import { ScannerComponent } from './scanner/scanner.component';
+import { ScNavComponent } from './scanner/sc-nav/sc-nav.component';
+import { ScDashboardComponent } from './scanner/sc-dashboard/sc-dashboard.component';
+import { ScCardComponent } from './scanner/sc-dashboard/sc-card/sc-card.component';
+import { ScPaperAllocationComponent } from './scanner/sc-paper-allocation/sc-paper-allocation.component';
+import { ScTableCardComponent } from './scanner/sc-paper-allocation/sc-table-card/sc-table-card.component';
+import { ScExamCardComponent } from './scanner/sc-paper-allocation/sc-exam-card/sc-exam-card.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +45,14 @@ import {AuthRoutingModule} from './auth/auth-routing.module';
     ApproveUsersComponent,
     AdminUsersComponent,
     UserDetailsComponent,
-    AuthComponent
+    AuthComponent,
+    ScannerComponent,
+    ScNavComponent,
+    ScDashboardComponent,
+    ScCardComponent,
+    ScPaperAllocationComponent,
+    ScTableCardComponent,
+    ScExamCardComponent
   ],
   imports: [
     BrowserModule,

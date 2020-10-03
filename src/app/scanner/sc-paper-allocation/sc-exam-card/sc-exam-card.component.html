@@ -1,8 +1,39 @@
-<div class="containar">
-  <div class="heading">
-    <span class="title">Examination Summary</span>
-  </div>
+<div class="containar container-fluid">
+  <div class="header">EXAM NAME : MAC-CFY6-Q5HK-GG0V</div>
+
+  <form>
+    <div class="row field-container">
+
+      <div class="col-12">
+        <label for="supp" class="form-label"># of Supplementaries</label> <br>
+        <mat-form-field class="form-field">
+          <input matInput type="number" id="supp" placeholder="Select.." formControlName="supp">
+        </mat-form-field>
+      </div>
+
+      <div class="col-12">
+        <label for="roll" class="form-label">Roll Number</label> <br>
+        <mat-form-field class="form-field">
+          <input matInput type="text" id="roll" placeholder="Enter Roll No. here.." formControlName="username">
+        </mat-form-field>
+      </div>
+
+    </div>
+
+    <div class="row btn-container">
+      <div class="col-6">
+        <button mat-raised-button class="allocate"><span class="btn-icon"><img src="assets/Frame%204.png" alt=""></span>&emsp; Scan
+        </button>
+      </div>
+
+      <div class="col-6">
+        <button mat-raised-button class="allocate"><span class="btn-icon"><img src="assets/Frame%204.png" alt=""></span>&emsp; Submit
+        </button>
+      </div>
+
+
+    </div>
+  </form>
 
 
 </div>
-

@@ -1,0 +1,27 @@
+.container-fluid {
+  margin: 2px;
+}
+
+.col-8 {
+  padding-right: 40px;
+}
+
+.pdf-viewer {
+  background-color: #F3FCFC;
+  height: 100vh;
+  border-radius: 13px;
+  padding: 15px;
+  margin-top: 26px;
+
+
+  .border {
+    text-align: center;
+    width: 100%;
+    height: 95vh;
+    border: 1px solid #038081 !important;
+    box-sizing: border-box;
+    border-radius: 13px;
+    border-spacing: 5px;
+    padding: 5px !important;
+  }
+}

@@ -13,30 +13,35 @@
   //   color: #038081;
   //   font-weight: 600;
   // }
-  
+
   // .mat-card-subtitle {
   //   color: #038081;
   //   font-size: 1.15rem;
   //   text-align: center;
   // }
 
+  hr{
+    width: 100%;
+    background-color: #DDF2F2;
+    margin-top: 23px;
+    margin-bottom: 23px;
+  }
   .header {
 
-    text-decoration: underline;
     margin-top: 32px;
-    margin-bottom: 47px;
+
 
     .heading-img {
       width: 32px;
       height: 32px;
       margin-right: 20px;
     }
-  
+
     .heading-text {
       color: #038081;
       font-size: 1.5rem;
       font-weight: 600;
-    } 
+    }
   }
 
   .card-text {

@@ -24,6 +24,7 @@
 
     text-decoration: underline;
     margin-top: 32px;
+    margin-bottom: 47px;
 
     .heading-img {
       width: 32px;
@@ -51,8 +52,13 @@
     height: 60px;
     // border-radius: 50px;
     background-color: #038081;
-    color: white;
-    font-size: 20px;
-    margin-top: 66px;
+    color: rgb(31, 29, 29);
+    font-size: 14px;
+    margin-top: 34px;
+    margin-bottom: 25px;
+    font-weight: 700;
+    line-height: 21px;
+    letter-spacing: 1.5px;
+    color: #fff;
   }
 }

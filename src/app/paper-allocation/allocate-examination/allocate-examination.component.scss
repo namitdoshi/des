@@ -10,7 +10,7 @@
 .example-container {
   height: 60%;
   overflow: auto;
-  border-radius: 25px !important;
+  // border-radius: 25px !important;
 }
 
 table {
@@ -65,7 +65,7 @@ tr.mat-header-row {
   margin-right: 50px;
   background-color: #F3FCFC;
   margin-top: 55px;
-  border-radius: 25px;
+  // border-radius: 25px;
   overflow: hidden;
 }
 
@@ -91,7 +91,7 @@ button.allocate {
   font-weight: 700;
   font-size: 18px;
   background: #038081;
-  border-radius: 36.5px;
+  // border-radius: 36.5px;
 }
 .mat-form-field-appearance-fill .mat-form-field-flex {
   background-color: rgba(0,0,0,.0) !important;
@@ -103,8 +103,8 @@ mat-form-field {
   height: 50px;
   left: 775px;
   top: 614px;
-  border-radius: 25px;
-  text-underline: none;
+  // border-radius: 25px;
+  // text-underline: none;
 }
 .mat-form-field-underline {
   display: none !important;

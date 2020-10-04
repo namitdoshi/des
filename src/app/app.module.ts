@@ -28,6 +28,14 @@ import { ScCardComponent } from './scanner/sc-dashboard/sc-card/sc-card.componen
 import { ScPaperAllocationComponent } from './scanner/sc-paper-allocation/sc-paper-allocation.component';
 import { ScTableCardComponent } from './scanner/sc-paper-allocation/sc-table-card/sc-table-card.component';
 import { ScExamCardComponent } from './scanner/sc-paper-allocation/sc-exam-card/sc-exam-card.component';
+import { EvaluatorComponent } from './evaluator/evaluator.component';
+import { EvNavComponent } from './evaluator/ev-nav/ev-nav.component';
+import { EvMyEvalComponent } from './evaluator/ev-my-eval/ev-my-eval.component';
+import { MyevalCardComponent } from './evaluator/ev-my-eval/myeval-card-list/myeval-card/myeval-card.component';
+import { EvalListComponent } from './evaluator/ev-my-eval/eval-list/eval-list.component';
+import { MyevalCardListComponent } from './evaluator/ev-my-eval/myeval-card-list/myeval-card-list.component';
+import { EvalDetailComponent } from './evaluator/ev-my-eval/eval-detail/eval-detail.component';
+import { QuestionComponentComponent } from './evaluator/ev-my-eval/eval-detail/question-component/question-component.component';
 
 @NgModule({
   declarations: [
@@ -52,7 +60,15 @@ import { ScExamCardComponent } from './scanner/sc-paper-allocation/sc-exam-card/
     ScCardComponent,
     ScPaperAllocationComponent,
     ScTableCardComponent,
-    ScExamCardComponent
+    ScExamCardComponent,
+    EvaluatorComponent,
+    EvNavComponent,
+    EvMyEvalComponent,
+    MyevalCardComponent,
+    EvalListComponent,
+    MyevalCardListComponent,
+    EvalDetailComponent,
+    QuestionComponentComponent
   ],
   imports: [
     BrowserModule,

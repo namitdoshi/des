@@ -6,7 +6,7 @@
   margin-right: 30px;
   background-color: #F3FCFC;
   margin-top: 55px;
-  border-radius: 13px;
+  //border-radius: 13px;
   overflow: hidden;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.135216);
   text-align: center !important;
@@ -17,7 +17,7 @@
   font-weight: 600;
   font-size: 18px;
   color: #038081;
-  margin-bottom: 21px;
+  margin-bottom: 6px;
 }
 
 label {
@@ -25,20 +25,23 @@ label {
   font-size: 14px;
   line-height: 28px;
   color: #038081;
+  margin-top: 15px;
 }
 
 //
-.example-card {
+
 
 
   .form-field {
     border: 1px solid rgba(166, 166, 166, 0.2);
     box-sizing: border-box;
-    border-radius: 21px;
+    //border-radius: 21px;
     height: 42px;
-    width: 30.25rem;
+    width: 250px;
     color: #038081;
     background: #F3FCFC;
+    padding: 0 10px;
+    padding-bottom: 10px !important;
   }
 
 
@@ -61,7 +64,6 @@ label {
     margin-bottom: 14px;
   }
 
-}
 
 mat-icon {
   cursor: pointer !important;
@@ -72,6 +74,7 @@ mat-icon {
   //flex-direction: row;
   //justify-content: flex-end;
   text-align: center;
+  margin-top: 34px;
 
   .scan {
     width: 140px;
@@ -80,7 +83,7 @@ mat-icon {
     font-weight: 700;
     font-size: 18px;
     background: #F98E73;
-    border-radius: 36.5px;
+    //border-radius: 36.5px;
   }
   .submit {
     width: 140px;
@@ -89,7 +92,7 @@ mat-icon {
     font-weight: 700;
     font-size: 18px;
     background: #038081;
-    border-radius: 36.5px;
+    //border-radius: 36.5px;
   }
 
   .btn-icon {

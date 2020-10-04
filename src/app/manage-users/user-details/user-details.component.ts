@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl } from '@angular/forms';
 
+
 @Component({
   selector: 'app-user-details',
   templateUrl: './user-details.component.html',
@@ -14,7 +15,7 @@ export class UserDetailsComponent implements OnInit {
   ];
   hide = true;
 
-  userDetail : FormGroup;
+  userDetail: FormGroup;
 
 
   constructor() { }
@@ -27,8 +28,7 @@ export class UserDetailsComponent implements OnInit {
       role: new FormControl(null),
       password: new FormControl(null),
       status: new FormControl(null)
-
-    })
+    });
   }
 
   onSubmit() {

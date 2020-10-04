@@ -73,7 +73,16 @@ mat-icon {
   //justify-content: flex-end;
   text-align: center;
 
-  .allocate {
+  .scan {
+    width: 140px;
+    height: 50px;
+    color: white;
+    font-weight: 700;
+    font-size: 18px;
+    background: #F98E73;
+    border-radius: 36.5px;
+  }
+  .submit {
     width: 140px;
     height: 50px;
     color: white;

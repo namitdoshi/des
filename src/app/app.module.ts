@@ -41,6 +41,17 @@ import { EvPaperAllocationTabsComponent } from './evaluator/ev-paper-allocation/
 import { EvExamListComponent } from './evaluator/ev-paper-allocation/ev-exam-list/ev-exam-list.component';
 import { EvMyPaperComponent } from './evaluator/ev-paper-allocation/ev-my-paper/ev-my-paper.component';
 import { EvChangePasswordComponent } from './evaluator/ev-change-password/ev-change-password.component';
+import { AdminComponent } from './admin/admin.component';
+import { ManageSubjectsComponent } from './admin/manage-subjects/manage-subjects.component';
+import { SubjectListComponent } from './admin/manage-subjects/subject-list/subject-list.component';
+import { SubjectDetailsComponent } from './admin/manage-subjects/subject-details/subject-details.component';
+import { ManageExamsComponent } from './admin/manage-exams/manage-exams.component';
+import { ExamListComponent } from './admin/manage-exams/exam-list/exam-list.component';
+import { ExamDetailsComponent } from './admin/manage-exams/exam-details/exam-details.component';
+import { AddExamComponent } from './admin/manage-exams/exam-details/add-exam/add-exam.component';
+import { AddQuestionComponent } from './admin/manage-exams/exam-details/add-question/add-question.component';
+import { AddQuestionModalComponent } from './admin/manage-exams/exam-details/add-question-modal/add-question-modal.component';
+import { UserListComponent } from './admin/manage-users/user-list/user-list.component';
 
 @NgModule({
   declarations: [
@@ -78,7 +89,18 @@ import { EvChangePasswordComponent } from './evaluator/ev-change-password/ev-cha
     EvPaperAllocationTabsComponent,
     EvExamListComponent,
     EvMyPaperComponent,
-    EvChangePasswordComponent
+    EvChangePasswordComponent,
+    AdminComponent,
+    ManageSubjectsComponent,
+    SubjectListComponent,
+    SubjectDetailsComponent,
+    ManageExamsComponent,
+    ExamListComponent,
+    ExamDetailsComponent,
+    AddExamComponent,
+    AddQuestionComponent,
+    AddQuestionModalComponent,
+    UserListComponent
   ],
   imports: [
     BrowserModule,

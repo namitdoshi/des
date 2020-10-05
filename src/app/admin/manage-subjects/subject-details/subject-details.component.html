@@ -1,1 +1,68 @@
-<p>subject-details works!</p>
+<div class="row no-gutters">
+  <div class="col-sm-12 col-md-12 col-lg-12">
+    <mat-card class="example-card">
+
+      <form [formGroup]="subjectDetail" (ngSubmit)='onSubmit()'>
+        <div class="row field-container">
+
+          <div class="col-6">
+            <label for="subjectCode" class="form-label">Subject Code</label> <br>
+            <mat-form-field class="form-field">
+              <input matInput type="text" id="subjectCode" placeholder="Subject Code" formControlName="subjectCode">
+            </mat-form-field>
+          </div>
+
+          <div class="col-6">
+            <label for="subjectName" class="form-label">Subject Name</label> <br>
+            <mat-form-field class="form-field">
+              <input matInput type="text" id="subjectName" placeholder="Subject Name *" formControlName="subjectName">
+            </mat-form-field>
+          </div>
+
+        </div>
+
+        <div class="row field-container">
+
+          <div class="col-6">
+            <label for="subjectClass" class="form-label">Subject Class</label> <br>
+            <mat-form-field class="form-field">
+              <input matInput type="text" id="subjectClass" placeholder="Subject Class *"
+                     formControlName="subjectClass">
+            </mat-form-field>
+          </div>
+
+          <div class="col-6">
+            <label for="examYear" class="form-label">Exam Year</label> <br>
+            <mat-form-field class="form-field">
+              <input matInput type="text" id="examYear" placeholder="Exam Year *" formControlName="examYear">
+            </mat-form-field>
+          </div>
+
+        </div>
+
+        <div class="row field-container">
+
+          <div class="col-6">
+            <label for="semester" class="form-label">Semester</label> <br>
+            <mat-form-field class="form-field">
+              <input matInput type="text" id="semester" placeholder="Semester" formControlName="semester">
+            </mat-form-field>
+          </div>
+
+          <div class="col-6">
+            <label for="stream" class="form-label">Stream</label> <br>
+            <mat-form-field class="form-field">
+              <input matInput type="text" id="stream" placeholder="Stream" formControlName="stream">
+            </mat-form-field>
+          </div>
+
+        </div>
+
+        <div class="row field-container btn-container">
+          <button mat-raised-button class="allocate">Save Subject</button>
+        </div>
+      </form>
+
+    </mat-card>
+  </div>
+</div>

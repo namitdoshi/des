@@ -55,6 +55,7 @@ import { AdminDashboardComponent } from './admin/admin-dashboard/admin-dashboard
 import { AdManageUsersComponent } from './admin/ad-manage-users/ad-manage-users.component';
 import { AdUserDetailsComponent } from './admin/ad-manage-users/ad-user-details/ad-user-details.component';
 import { AdUserListComponent } from './admin/ad-manage-users/ad-user-list/ad-user-list.component';
+import { AdNavbarComponent } from './admin/navbar/navbar.component';
 
 @NgModule({
   declarations: [
@@ -106,7 +107,8 @@ import { AdUserListComponent } from './admin/ad-manage-users/ad-user-list/ad-use
     AdminDashboardComponent,
     AdManageUsersComponent,
     AdUserDetailsComponent,
-    AdUserListComponent
+    AdUserListComponent,
+    AdNavbarComponent
   ],
   imports: [
     BrowserModule,

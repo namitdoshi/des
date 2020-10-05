@@ -43,7 +43,8 @@ const routes: Routes = [
     path: 'evaluator', component: EvaluatorComponent, children: [
       {path: 'my-eval', component: EvMyEvalComponent},
       {path: 'paper-allocation', component: EvPaperAllocationComponent},
-      {path: 'change-password', component: EvChangePasswordComponent}
+      {path: 'change-password', component: EvChangePasswordComponent},
+      {path: '', redirectTo: 'my-eval', pathMatch: 'full'}
     ]
   }
 ];

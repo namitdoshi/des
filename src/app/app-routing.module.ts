@@ -32,7 +32,7 @@ const routes: Routes = [
   {
     path: 'admin', component: AdminComponent, children: [
       {path: 'dashboard', component: AdminDashboardComponent},
-      {path: 'manage-subject', component: ManageSubjectsComponent},
+      {path: 'manage-subjects', component: ManageSubjectsComponent},
       {path: 'manage-exams', component: ManageExamsComponent},
       {path: 'manage-users', component: AdManageUsersComponent},
       {path: 'change-password', component: EvChangePasswordComponent},

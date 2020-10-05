@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-subject-list',
@@ -6,10 +6,39 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./subject-list.component.scss']
 })
 export class SubjectListComponent implements OnInit {
+  displayedColumns = ['subjectCode', 'subjectName', 'subjectClass', 'examinationYear', 'edit'];
+  dataSource = ELEMENT_DATA;
 
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit(): void {
   }
 
 }
+
+export interface PeriodicElement {
+  subjectCode: string;
+  subjectName: string;
+  subjectClass: string;
+  examinationYear: string;
+}
+
+const ELEMENT_DATA: PeriodicElement[] = [
+  {subjectCode: 'MECH001', subjectName: 'Machine Design', subjectClass: '3', examinationYear: '2020'},
+  {subjectCode: 'MECH001', subjectName: 'Machine Design', subjectClass: '3', examinationYear: '2020'},
+  {subjectCode: 'MECH001', subjectName: 'Machine Design', subjectClass: '3', examinationYear: '2020'},
+  {subjectCode: 'MECH001', subjectName: 'Machine Design', subjectClass: '3', examinationYear: '2020'},
+  {subjectCode: 'MECH001', subjectName: 'Machine Design', subjectClass: '3', examinationYear: '2020'},
+  {subjectCode: 'MECH001', subjectName: 'Machine Design', subjectClass: '3', examinationYear: '2020'},
+  {subjectCode: 'MECH001', subjectName: 'Machine Design', subjectClass: '3', examinationYear: '2020'},
+  {subjectCode: 'MECH001', subjectName: 'Machine Design', subjectClass: '3', examinationYear: '2020'},
+  {subjectCode: 'MECH001', subjectName: 'Machine Design', subjectClass: '3', examinationYear: '2020'},
+  {subjectCode: 'MECH001', subjectName: 'Machine Design', subjectClass: '3', examinationYear: '2020'},
+  {subjectCode: 'MECH001', subjectName: 'Machine Design', subjectClass: '3', examinationYear: '2020'},
+  {subjectCode: 'MECH001', subjectName: 'Machine Design', subjectClass: '3', examinationYear: '2020'},
+  {subjectCode: 'MECH001', subjectName: 'Machine Design', subjectClass: '3', examinationYear: '2020'},
+  {subjectCode: 'MECH001', subjectName: 'Machine Design', subjectClass: '3', examinationYear: '2020'},
+  {subjectCode: 'MECH001', subjectName: 'Machine Design', subjectClass: '3', examinationYear: '2020'},
+];
+

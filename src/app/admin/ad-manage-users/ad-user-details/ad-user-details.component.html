@@ -1,1 +1,159 @@
-<p>ad-user-details works!</p>
+<div class="row no-gutters">
+  <div class="col-sm-12 col-md-12 col-lg-12">
+    <mat-card class="example-card">
+
+      <form [formGroup]="userDetail" (ngSubmit)='onSubmit()'>
+        <div class="row field-container">
+
+          <div class="col-6">
+            <label for="name" class="form-label">Full Name</label> <br>
+            <mat-form-field class="form-field">
+              <input matInput type="text" id="name" placeholder="Type your name here" formControlName="name">
+            </mat-form-field>
+          </div>
+
+          <div class="col-6">
+            <label for="username" class="form-label">Username</label> <br>
+            <mat-form-field class="form-field">
+              <input matInput type="text" id="username" placeholder="Type your username here"
+                     formControlName="username">
+            </mat-form-field>
+          </div>
+
+        </div>
+
+        <div class="row field-container">
+
+          <div class="col-6">
+            <label for="email" class="form-label">Email</label> <br>
+            <mat-form-field class="form-field">
+              <input matInput type="email" id="email" placeholder="Type your Email here" formControlName="email">
+            </mat-form-field>
+          </div>
+
+          <div class="col-6">
+            <label for="role" class="form-label">Role</label> <br>
+            <mat-form-field appearance="fill" class="form-field">
+              <mat-label>Select Your Role..</mat-label>
+              <mat-select id="role" formControlName="role">
+                <mat-option *ngFor="let food of foods" [value]="food.value">
+                  {{food.viewValue}}
+                </mat-option>
+              </mat-select>
+            </mat-form-field>
+          </div>
+
+        </div>
+
+        <div class="row field-container">
+
+          <div class="col-6">
+            <label for="pswrd" class="form-label">Password</label> <br>
+            <mat-form-field class="form-field">
+              <input matInput id="pswrd" placeholder="Type Password here.." [type]="hide ? 'password' : 'text'"
+                     formControlName="password"
+                     required>
+              <mat-icon matSuffix (click)="hide = !hide">{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+            </mat-form-field>
+          </div>
+
+          <div class="col-6">
+            <label for="pswrd2" class="form-label">Confirm Password</label> <br>
+            <mat-form-field class="form-field">
+              <input matInput id="pswrd2" placeholder="Confirm Password" [type]="hide ? 'password' : 'text'"
+                     formControlName="password2"
+                     required>
+              <mat-icon matSuffix (click)="hide = !hide">{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+            </mat-form-field>
+          </div>
+
+        </div>
+
+        <div class="row field-container">
+
+          <div class="col-6">
+            <label for="active" class="form-label">Is Active</label> <br>
+            <mat-form-field class="form-field">
+              <input matInput type="text" id="active" formControlName="active">
+            </mat-form-field>
+          </div>
+
+          <div class="col-6 btn-container">
+            <label class="form-label"></label> <br>
+            <button mat-raised-button class="allocate">Save User</button>
+          </div>
+
+        </div>
+
+        <!--                <div class="row field-container btn-container">-->
+        <!--                  <button mat-raised-button class="allocate">Save User</button>-->
+        <!--                </div>-->
+      </form>
+
+
+<!--      Card andar wala-->
+      <mat-card class="example-card">
+
+        <form [formGroup]="userDetail2" (ngSubmit)='onSubmit2()'>
+          <div class="row field-container">
+
+            <div class="col-6">
+              <label for="officeCode" class="form-label">Office Code</label> <br>
+              <mat-form-field class="form-field">
+                <input matInput type="text" id="officeCode" placeholder="Office Code" formControlName="officeCode">
+              </mat-form-field>
+            </div>
+
+            <div class="col-6">
+              <label for="officeName" class="form-label">Office Name</label> <br>
+              <mat-form-field class="form-field">
+                <input matInput type="text" id="officeName" placeholder="Office Name" formControlName="officeName">
+              </mat-form-field>
+            </div>
+
+          </div>
+
+          <div class="row field-container">
+
+            <div class="col-6">
+              <label for="contactPerson" class="form-label">Contact Person</label> <br>
+              <mat-form-field class="form-field">
+                <input matInput type="text" id="contactPerson" placeholder="Contact Person" formControlName="contactPerson">
+              </mat-form-field>
+            </div>
+
+            <div class="col-6">
+              <label for="address" class="form-label">Address</label> <br>
+              <mat-form-field class="form-field">
+                <input matInput type="text" id="address" placeholder="Address" formControlName="address">
+              </mat-form-field>
+            </div>
+
+          </div>
+
+          <div class="row field-container">
+
+            <div class="col-6">
+              <label for="phone" class="form-label">Phone</label> <br>
+              <mat-form-field class="form-field">
+                <input matInput type="text" id="phone" placeholder="Phone" formControlName="phone">
+              </mat-form-field>
+            </div>
+
+            <div class="col-6">
+              <label for="mobileNumber" class="form-label">Mobile Number</label> <br>
+              <mat-form-field class="form-field">
+                <input matInput type="text" id="mobileNumber" placeholder="Mobile Number" formControlName="mobileNumber">
+              </mat-form-field>
+            </div>
+
+          </div>
+
+
+        </form>
+
+      </mat-card>
+
+    </mat-card>
+  </div>
+</div>

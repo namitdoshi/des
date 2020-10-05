@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-import { DasboardTabsComponent } from "../dashboard/dasboard-tabs/dasboard-tabs.component";
+import { DasboardTabsComponent } from '../dashboard/dasboard-tabs/dasboard-tabs.component';
 
 @Component({
   selector: 'app-dashboard',

@@ -51,7 +51,10 @@ import { ExamDetailsComponent } from './admin/manage-exams/exam-details/exam-det
 import { AddExamComponent } from './admin/manage-exams/exam-details/add-exam/add-exam.component';
 import { AddQuestionComponent } from './admin/manage-exams/exam-details/add-question/add-question.component';
 import { AddQuestionModalComponent } from './admin/manage-exams/exam-details/add-question-modal/add-question-modal.component';
-import { UserListComponent } from './admin/manage-users/user-list/user-list.component';
+import { AdminDashboardComponent } from './admin/admin-dashboard/admin-dashboard.component';
+import { AdManageUsersComponent } from './admin/ad-manage-users/ad-manage-users.component';
+import { AdUserDetailsComponent } from './admin/ad-manage-users/ad-user-details/ad-user-details.component';
+import { AdUserListComponent } from './admin/ad-manage-users/ad-user-list/ad-user-list.component';
 
 @NgModule({
   declarations: [
@@ -100,7 +103,10 @@ import { UserListComponent } from './admin/manage-users/user-list/user-list.comp
     AddExamComponent,
     AddQuestionComponent,
     AddQuestionModalComponent,
-    UserListComponent
+    AdminDashboardComponent,
+    AdManageUsersComponent,
+    AdUserDetailsComponent,
+    AdUserListComponent
   ],
   imports: [
     BrowserModule,

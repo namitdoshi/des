@@ -1,1 +1,48 @@
-<p>ev-nav works!</p>
+<mat-toolbar>
+
+  <span class="example-icon" aria-label="Example icon-button with menu icon">
+    <img src="../../assets/des-logo.png" class="logo" alt="des-logo"/>
+  </span>
+
+  <span class="nav-list">
+
+    <span>
+      <a routerLink="./my-eval" routerLinkActive="active">
+        <img src="../../assets/Frame 3.png" alt=""/> My Evaluations
+      </a>
+    </span>
+
+    <span>
+      <a routerLink="./paper-allocation" routerLinkActive="active">
+        <img src="../../assets/Frame 4.png" alt=""/> Paper Allocation
+      </a>
+    </span>
+
+    <span>
+      <a routerLink="./change-password" routerLinkActive="active">
+        <img src="../../assets/Frame 3.png" alt=""/> Change Password
+      </a>
+    </span>
+
+  </span>
+
+  <span>
+    <button
+      class="example-icon notification-btn"
+      aria-label="Example icon-button with heart icon">
+      <img
+        src="../../assets/Frame 6.png"
+        alt="notification"
+        class="notification-img"/>
+    </button>
+
+    <button
+      mat-icon-button
+      class="example-icon"
+      aria-label="Example icon-button with share icon">
+      <mat-icon>share</mat-icon>
+    </button>
+
+  </span>
+
+</mat-toolbar>

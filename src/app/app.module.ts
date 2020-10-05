@@ -36,6 +36,11 @@ import { EvalListComponent } from './evaluator/ev-my-eval/eval-list/eval-list.co
 import { MyevalCardListComponent } from './evaluator/ev-my-eval/myeval-card-list/myeval-card-list.component';
 import { EvalDetailComponent } from './evaluator/ev-my-eval/eval-detail/eval-detail.component';
 import { QuestionComponentComponent } from './evaluator/ev-my-eval/eval-detail/question-component/question-component.component';
+import { EvPaperAllocationComponent } from './evaluator/ev-paper-allocation/ev-paper-allocation.component';
+import { EvPaperAllocationTabsComponent } from './evaluator/ev-paper-allocation/ev-paper-allocation-tabs/ev-paper-allocation-tabs.component';
+import { EvExamListComponent } from './evaluator/ev-paper-allocation/ev-exam-list/ev-exam-list.component';
+import { EvMyPaperComponent } from './evaluator/ev-paper-allocation/ev-my-paper/ev-my-paper.component';
+import { EvChangePasswordComponent } from './evaluator/ev-change-password/ev-change-password.component';
 
 @NgModule({
   declarations: [
@@ -68,7 +73,12 @@ import { QuestionComponentComponent } from './evaluator/ev-my-eval/eval-detail/q
     EvalListComponent,
     MyevalCardListComponent,
     EvalDetailComponent,
-    QuestionComponentComponent
+    QuestionComponentComponent,
+    EvPaperAllocationComponent,
+    EvPaperAllocationTabsComponent,
+    EvExamListComponent,
+    EvMyPaperComponent,
+    EvChangePasswordComponent
   ],
   imports: [
     BrowserModule,

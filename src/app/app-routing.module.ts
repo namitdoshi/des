@@ -13,6 +13,10 @@ import {ManageSubjectsComponent} from './admin/manage-subjects/manage-subjects.c
 import {ManageExamsComponent} from './admin/manage-exams/manage-exams.component';
 import {AdManageUsersComponent} from './admin/ad-manage-users/ad-manage-users.component';
 import {EvChangePasswordComponent} from './evaluator/ev-change-password/ev-change-password.component';
+import {EvaluatorComponent} from './evaluator/evaluator.component';
+import {EvMyEvalComponent} from './evaluator/ev-my-eval/ev-my-eval.component';
+import {EvPaperAllocationComponent} from './evaluator/ev-paper-allocation/ev-paper-allocation.component';
+
 
 const routes: Routes = [
   {path: 'dashboard', component: DashboardComponent},
@@ -34,8 +38,14 @@ const routes: Routes = [
       {path: 'change-password', component: EvChangePasswordComponent},
       {path: '', redirectTo: 'dashboard', pathMatch: 'full'}
     ]
+  },
+  {
+    path: 'evaluator', component: EvaluatorComponent, children: [
+      {path: 'my-eval', component: EvMyEvalComponent},
+      {path: 'paper-allocation', component: EvPaperAllocationComponent},
+      {path: 'change-password', component: EvChangePasswordComponent}
+    ]
   }
-
 ];
 
 @NgModule({

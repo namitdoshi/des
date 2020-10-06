@@ -1,1 +1,44 @@
-<p>eval-list works!</p>
+<div class="containar">
+  <div class="row">
+    <div class="col-6">
+      <div class="example-container mat-elevation-z8">
+        <table mat-table [dataSource]="dataSource">
+
+          <ng-container matColumnDef="ExamCode">
+            <th mat-header-cell *matHeaderCellDef> Exam Code</th>
+            <td mat-cell *matCellDef="let element">
+              <a routerLink="../detail">
+                <button class="btn">{{element.ExamCode}} </button>
+              </a>
+            </td>
+          </ng-container>
+
+          <tr mat-header-row *matHeaderRowDef="displayedColumns; sticky: true"></tr>
+          <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+
+        </table>
+      </div>
+    </div>
+
+    <div class="col-6">
+      <div class="example-container mat-elevation-z8">
+        <table mat-table [dataSource]="dataSource">
+
+          <ng-container matColumnDef="ExamCode">
+            <th mat-header-cell *matHeaderCellDef> Exam Code</th>
+            <td mat-cell *matCellDef="let element">
+              <a routerLink="../detail">
+                <button class="btn">{{element.ExamCode}} </button>
+              </a>
+            </td>
+          </ng-container>
+
+          <tr mat-header-row *matHeaderRowDef="displayedColumns; sticky: true"></tr>
+          <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+
+        </table>
+      </div>
+    </div>
+  </div>
+
+</div>

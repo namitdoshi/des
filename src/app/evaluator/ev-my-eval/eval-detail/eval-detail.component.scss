@@ -32,3 +32,23 @@ mat-card {
     }
   }
 }
+.question {
+  background-color: #F3FCFC;
+  margin: 15px;
+  height: 90vh;
+  //width: 100%;
+  overflow: scroll;
+  border: 1px solid #038081;
+  box-sizing: border-box;
+  border-radius: 13px;
+}
+
+.pdf {
+  background-color: #F3FCFC;
+  margin: 15px;
+  height: 90vh;
+  border: 1px solid #038081;
+  box-sizing: border-box;
+  border-radius: 13px;
+  //width: 100%;
+}

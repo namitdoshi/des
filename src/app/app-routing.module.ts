@@ -16,6 +16,9 @@ import {EvChangePasswordComponent} from './evaluator/ev-change-password/ev-chang
 import {EvaluatorComponent} from './evaluator/evaluator.component';
 import {EvMyEvalComponent} from './evaluator/ev-my-eval/ev-my-eval.component';
 import {EvPaperAllocationComponent} from './evaluator/ev-paper-allocation/ev-paper-allocation.component';
+import { MyevalCardListComponent } from './evaluator/ev-my-eval/myeval-card-list/myeval-card-list.component';
+import { EvalListComponent } from './evaluator/ev-my-eval/eval-list/eval-list.component';
+import { EvalDetailComponent } from './evaluator/ev-my-eval/eval-detail/eval-detail.component';
 
 
 const routes: Routes = [
@@ -41,7 +44,11 @@ const routes: Routes = [
   },
   {
     path: 'evaluator', component: EvaluatorComponent, children: [
-      {path: 'my-eval', component: EvMyEvalComponent},
+      {path: 'my-eval', component: EvMyEvalComponent, children: [
+        {path: '', component: MyevalCardListComponent},
+        {path: 'marking', component: EvalListComponent},
+        {path: 'detail', component: EvalDetailComponent}
+      ]},
       {path: 'paper-allocation', component: EvPaperAllocationComponent},
       {path: 'change-password', component: EvChangePasswordComponent},
       {path: '', redirectTo: 'my-eval', pathMatch: 'full'}

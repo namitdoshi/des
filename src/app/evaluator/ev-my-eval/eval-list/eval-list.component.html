@@ -5,7 +5,7 @@
         <table mat-table [dataSource]="dataSource">
 
           <ng-container matColumnDef="ExamCode">
-            <th mat-header-cell *matHeaderCellDef> Exam Code</th>
+            <th mat-header-cell *matHeaderCellDef>Pending for Evaluation : 1</th>
             <td mat-cell *matCellDef="let element">
               <a routerLink="../detail">
                 <button class="btn">{{element.ExamCode}} </button>
@@ -25,7 +25,7 @@
         <table mat-table [dataSource]="dataSource">
 
           <ng-container matColumnDef="ExamCode">
-            <th mat-header-cell *matHeaderCellDef> Exam Code</th>
+            <th mat-header-cell *matHeaderCellDef> Evaluated : 0</th>
             <td mat-cell *matCellDef="let element">
               <a routerLink="../detail">
                 <button class="btn">{{element.ExamCode}} </button>

@@ -41,21 +41,6 @@ import { EvPaperAllocationTabsComponent } from './evaluator/ev-paper-allocation/
 import { EvExamListComponent } from './evaluator/ev-paper-allocation/ev-exam-list/ev-exam-list.component';
 import { EvMyPaperComponent } from './evaluator/ev-paper-allocation/ev-my-paper/ev-my-paper.component';
 import { EvChangePasswordComponent } from './evaluator/ev-change-password/ev-change-password.component';
-import { AdminComponent } from './admin/admin.component';
-import { ManageSubjectsComponent } from './admin/manage-subjects/manage-subjects.component';
-import { SubjectListComponent } from './admin/manage-subjects/subject-list/subject-list.component';
-import { SubjectDetailsComponent } from './admin/manage-subjects/subject-details/subject-details.component';
-import { ManageExamsComponent } from './admin/manage-exams/manage-exams.component';
-import { ExamListComponent } from './admin/manage-exams/exam-list/exam-list.component';
-import { ExamDetailsComponent } from './admin/manage-exams/exam-details/exam-details.component';
-import { AddExamComponent } from './admin/manage-exams/exam-details/add-exam/add-exam.component';
-import { AddQuestionComponent } from './admin/manage-exams/exam-details/add-question/add-question.component';
-import { AddQuestionModalComponent } from './admin/manage-exams/exam-details/add-question-modal/add-question-modal.component';
-import { AdminDashboardComponent } from './admin/admin-dashboard/admin-dashboard.component';
-import { AdManageUsersComponent } from './admin/ad-manage-users/ad-manage-users.component';
-import { AdUserDetailsComponent } from './admin/ad-manage-users/ad-user-details/ad-user-details.component';
-import { AdUserListComponent } from './admin/ad-manage-users/ad-user-list/ad-user-list.component';
-import { AdNavbarComponent } from './admin/navbar/navbar.component';
 
 @NgModule({
   declarations: [
@@ -94,21 +79,6 @@ import { AdNavbarComponent } from './admin/navbar/navbar.component';
     EvExamListComponent,
     EvMyPaperComponent,
     EvChangePasswordComponent,
-    AdminComponent,
-    ManageSubjectsComponent,
-    SubjectListComponent,
-    SubjectDetailsComponent,
-    ManageExamsComponent,
-    ExamListComponent,
-    ExamDetailsComponent,
-    AddExamComponent,
-    AddQuestionComponent,
-    AddQuestionModalComponent,
-    AdminDashboardComponent,
-    AdManageUsersComponent,
-    AdUserDetailsComponent,
-    AdUserListComponent,
-    AdNavbarComponent
   ],
   imports: [
     BrowserModule,

@@ -1,1 +1,45 @@
-<p>ev-my-paper works!</p>
+<div class="row no-gutters">
+  <div class="col-sm-12 col-md-12 col-lg-12 ex">
+    <mat-card class="example-card">
+
+      <form [formGroup]="userDetail" (ngSubmit)='onSubmit()'>
+        <div class="row field-container">
+
+          <div class="col-12">
+            <label for="exam-code" class="form-label">Exam Code</label> <br>
+            <mat-form-field class="form-field" floatLabel="never">
+              <input matInput type="text" id="exam-code" formControlName="examCode" required placeholder="Exam Code here">
+            </mat-form-field>
+          </div>  
+        </div>
+        
+        <div class="row field-container">
+  
+          <div class="col-12">
+            <label for="comment" class="form-label">Upload Paper</label> <br>
+            <mat-form-field class="form-field" floatLabel="never" style="width: 458px !important;">
+              <input matInput type="text" id="file" formControlName="file" required placeholder="File here">
+            </mat-form-field>
+            <button mat-mini-fab color="warn">
+              <mat-icon>attachment</mat-icon>
+            </button>
+          </div>  
+        </div>
+
+        <div class="row field-container">
+          <div class="col-12">
+            <label for="file" class="form-label">Exam Code</label> <br>
+            <mat-form-field class="form-field" floatLabel="never">
+              <input matInput type="text" id="comment" formControlName="comment" required placeholder="Comments here">
+            </mat-form-field>
+          </div>  
+        </div>
+  
+        <div class="row field-container btn-container">
+          <button mat-raised-button class="allocate">Save User</button>
+        </div>
+      </form>
+
+    </mat-card>
+  </div>
+</div>

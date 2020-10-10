@@ -1,6 +1,6 @@
 .example-card {
   background: #F3FCFC;
-  margin: 50px 30px;
+  margin: 50px 20px 0 20px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.135216);
   // border-radius: 13px;
   padding: 2.2rem 6.625rem;
@@ -118,7 +118,12 @@ table {
   //border-radius: 36.5px;
 }
 
+
 //mat table
+
+.div-mat-table {
+  padding: 50px 20px 50px 20px;
+}
 ::-webkit-scrollbar {
   width: 10px;
 }

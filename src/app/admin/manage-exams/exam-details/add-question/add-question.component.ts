@@ -25,20 +25,6 @@ export interface PeriodicElement {
 
 const ELEMENT_DATA: PeriodicElement[] = [
   {Question: '01', MainQuestionMarks: '50', SubQuestionTotal: '0', QuestionType: 'Objective'},
-  {Question: '01', MainQuestionMarks: '50', SubQuestionTotal: '0', QuestionType: 'Objective'},
-  {Question: '01', MainQuestionMarks: '50', SubQuestionTotal: '0', QuestionType: 'Objective'},
-  {Question: '01', MainQuestionMarks: '50', SubQuestionTotal: '0', QuestionType: 'Objective'},
-  {Question: '01', MainQuestionMarks: '50', SubQuestionTotal: '0', QuestionType: 'Objective'},
-  {Question: '01', MainQuestionMarks: '50', SubQuestionTotal: '0', QuestionType: 'Objective'},
-  {Question: '01', MainQuestionMarks: '50', SubQuestionTotal: '0', QuestionType: 'Objective'},
-  {Question: '01', MainQuestionMarks: '50', SubQuestionTotal: '0', QuestionType: 'Objective'},
-  {Question: '01', MainQuestionMarks: '50', SubQuestionTotal: '0', QuestionType: 'Objective'},
-  {Question: '01', MainQuestionMarks: '50', SubQuestionTotal: '0', QuestionType: 'Objective'},
-  {Question: '01', MainQuestionMarks: '50', SubQuestionTotal: '0', QuestionType: 'Objective'},
-  {Question: '01', MainQuestionMarks: '50', SubQuestionTotal: '0', QuestionType: 'Objective'},
-  {Question: '01', MainQuestionMarks: '50', SubQuestionTotal: '0', QuestionType: 'Objective'},
-  {Question: '01', MainQuestionMarks: '50', SubQuestionTotal: '0', QuestionType: 'Objective'},
-  {Question: '01', MainQuestionMarks: '50', SubQuestionTotal: '0', QuestionType: 'Objective'},
-  {Question: '01', MainQuestionMarks: '50', SubQuestionTotal: '0', QuestionType: 'Objective'},
+  {Question: '01', MainQuestionMarks: '50', SubQuestionTotal: '0', QuestionType: 'Objective'}
 ];
 

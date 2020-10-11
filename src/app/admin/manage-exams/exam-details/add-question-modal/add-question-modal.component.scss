@@ -53,6 +53,7 @@ mat-card {
     font-weight: bold;
     font-size: 20px;
     color: #4A4A4A;
+    width: 220px;
   }
 
   .green-btn {
@@ -138,11 +139,15 @@ mat-card {
     mat-form-field {
       //width: auto;
 
-      input {
+      .select, input {
         height: 42px;
         border: 1px solid rgba(166, 166, 166, 0.2);
         box-sizing: border-box;
       }
+    }
+
+    .text-field {
+      width: 1170px;
     }
 
   }

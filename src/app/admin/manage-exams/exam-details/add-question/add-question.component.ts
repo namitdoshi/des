@@ -16,10 +16,7 @@ export class AddQuestionComponent implements OnInit {
   }
 
   openDialog() {
-    const dialogRef = this.dialog.open(AddQuestionModalComponent, {
-      maxWidth: '95vw',
-
-    });
+    const dialogRef = this.dialog.open(AddQuestionModalComponent);
 
     dialogRef.afterClosed().subscribe(result => {
       console.log(`Dialog result: ${result}`);

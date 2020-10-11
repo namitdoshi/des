@@ -19,7 +19,14 @@
       <div class="col-3">
         <mat-form-field floatLabel="never" appearance="standard">
           <label for="subject-code">Subject Code</label>
-          <input type="text" id="subject-code" matInput>
+          <mat-form-field appearance="fill" class="form-field">
+            <mat-label>Select Subject Code</mat-label>
+            <mat-select id="role" formControlName="role">
+              <mat-option *ngFor="let food of foods" [value]="food.value">
+                {{food.viewValue}}
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
         </mat-form-field>
       </div>
       <div class="col-3">
@@ -43,15 +50,21 @@
     </div>
     <div class="row">
       <div class="col-3">
-        <mat-form-field floatLabel="never" appearance="standard">
-          <label for="exam-date">Exam Date</label>
-          <input type="text" id="exam-date" matInput>
+        <mat-form-field appearance="standard">
+          <label for="">Exam Date</label>
+          <!-- <mat-label>Choose a date</mat-label> -->
+          <input matInput [matDatepicker]="picker" placeholder="Select Exam Date">
+          <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+          <mat-datepicker #picker></mat-datepicker>
         </mat-form-field>
       </div>
       <div class="col-3">
-        <mat-form-field floatLabel="never" appearance="standard">
-          <label for="result-date">Result Date</label>
-          <input type="text" id="result-date" matInput>
+          <mat-form-field appearance="standard">
+            <label for="result-date">Result Date</label>
+            <!-- <mat-label>Choose a date</mat-label> -->
+            <input matInput [matDatepicker]="result" placeholder="Select Result Date">
+            <mat-datepicker-toggle matSuffix [for]="result"></mat-datepicker-toggle>
+            <mat-datepicker #result></mat-datepicker>
         </mat-form-field>
       </div>
       <div class="col-3">

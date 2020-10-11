@@ -7,9 +7,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AddExamComponent implements OnInit {
 
+  foods: Food[] = [
+    {value: 'MECH001', viewValue: 'MECH001'},
+    {value: 'MATH001', viewValue: 'MATH001'},
+  ];
+
   constructor() { }
 
   ngOnInit(): void {
   }
 
+}
+
+interface Food {
+  value: string;
+  viewValue: string;
 }

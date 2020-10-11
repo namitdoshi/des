@@ -62,6 +62,11 @@ mat-card {
     mat-form-field {
       width: 300px; 
       
+      label {
+        font-weight: 700;
+        font-size: 20px;
+      }
+      
       input {
         height: 42px;  
         border: 1px solid rgba(166, 166, 166, 0.2);

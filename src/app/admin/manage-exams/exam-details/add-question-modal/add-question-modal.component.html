@@ -1,64 +1,151 @@
-<h2 mat-dialog-title>Install Angular</h2>
 <mat-dialog-content class="mat-typography">
-  <h3>Develop across all platforms</h3>
-  <p>Learn one way to build applications with Angular and reuse your code and abilities to build
-    apps for any deployment target. For web, mobile web, native mobile and native desktop.</p>
+  <div class="row no-gutters">
+    <div class="col-sm-12 col-md-12 col-lg-12">
 
-  <h3>Speed &amp; Performance</h3>
-  <p>Achieve the maximum speed possible on the Web Platform today, and take it further, via Web
-    Workers and server-side rendering. Angular puts you in control over scalability. Meet huge
-    data requirements by building data models on RxJS, Immutable.js or another push-model.</p>
+      <mat-card>
+        <form>
+          <div class="row">
+            <div class="col-2">
+              <h2 mat-dialog-title>Edit Question</h2>
+            </div>
+            <div class="col-10">
+              <mat-dialog-actions align="end" style="margin-bottom: 50px">
+                <button mat-button class="green-btn" [mat-dialog-close]="true" cdkFocusInitial>Save</button>
+                <button mat-button class="red-btn" mat-dialog-close>Close</button>
+              </mat-dialog-actions>
+            </div>
+          </div>
 
-  <h3>Incredible tooling</h3>
-  <p>Build features quickly with simple, declarative templates. Extend the template language with
-    your own components and use a wide array of existing components. Get immediate Angular-specific
-    help and feedback with nearly every IDE and editor. All this comes together so you can focus
-    on building amazing apps rather than trying to make the code work.</p>
+          <div class="row">
 
-  <h3>Loved by millions</h3>
-  <p>From prototype through global deployment, Angular delivers the productivity and scalable
-    infrastructure that supports Google's largest applications.</p>
+            <div class="col-1">
+              <mat-form-field floatLabel="never" appearance="standard">
+                <label for="Question#">Question#</label>
+                <input type="number" id="Question#" matInput>
+              </mat-form-field>
+            </div>
 
-  <h3>What is Angular?</h3>
+            <div class="col-3">
+              <label for="QuestionType" class="form-label">Question Type</label> <br>
+              <mat-form-field floatLabel="never" appearance="standard">
+                <mat-label>Select Your Type..</mat-label>
+                <mat-select id="QuestionType" formControlName="QuestionType">
+                  <mat-option *ngFor="let food of foods" [value]="food.value">
+                    {{food.viewValue}}
+                  </mat-option>
+                </mat-select>
+              </mat-form-field>
+            </div>
 
-  <p>Angular is a platform that makes it easy to build applications with the web. Angular
-    combines declarative templates, dependency injection, end to end tooling, and integrated
-    best practices to solve development challenges. Angular empowers developers to build
-    applications that live on the web, mobile, or the desktop</p>
+            <div class="col-3">
+              <mat-form-field floatLabel="never" appearance="standard">
+                <label for="MainQuestionMarks">Main Question Marks</label>
+                <input type="number" id="MainQuestionMarks" matInput>
+              </mat-form-field>
+            </div>
 
-  <h3>Architecture overview</h3>
+            <div class="col-3">
+              <mat-form-field floatLabel="never" appearance="standard">
+                <label for="SubQuestionTotal">Sub Question Total</label>
+                <input type="number" id="SubQuestionTotal" matInput>
+              </mat-form-field>
+            </div>
 
-  <p>Angular is a platform and framework for building client applications in HTML and TypeScript.
-  Angular is itself written in TypeScript. It implements core and optional functionality as a
-  set of TypeScript libraries that you import into your apps.</p>
+            <div class="col-2">
+              <mat-form-field floatLabel="never" appearance="standard">
+                <label for="TotalMarks">Total Marks</label>
+                <input type="number" id="TotalMarks" matInput>
+              </mat-form-field>
+            </div>
 
-  <p>The basic building blocks of an Angular application are NgModules, which provide a compilation
-  context for components. NgModules collect related code into functional sets; an Angular app is
-  defined by a set of NgModules. An app always has at least a root module that enables
-  bootstrapping, and typically has many more feature modules.</p>
+            <div class="col-12">
+              <mat-form-field floatLabel="never" appearance="standard">
+                <label for="Question">Question</label>
+                <input type="text" id="Question" matInput>
+              </mat-form-field>
+            </div>
 
-  <p>Components define views, which are sets of screen elements that Angular can choose among and
-  modify according to your program logic and data. Every app has at least a root component.</p>
+            <div class="col-12">
+              <mat-form-field floatLabel="never" appearance="standard">
+                <label for="IdealAnswer">Ideal Answer</label>
+                <input type="text" id="IdealAnswer" matInput>
+              </mat-form-field>
+            </div>
 
-  <p>Components use services, which provide specific functionality not directly related to views.
-  Service providers can be injected into components as dependencies, making your code modular,
-  reusable, and efficient.</p>
+          </div>
 
-  <p>Both components and services are simply classes, with decorators that mark their type and
-  provide metadata that tells Angular how to use them.</p>
+        </form>
+      </mat-card>
 
-  <p>The metadata for a component class associates it with a template that defines a view. A
-  template combines ordinary HTML with Angular directives and binding markup that allow Angular
-  to modify the HTML before rendering it for display.</p>
+    </div>
 
-  <p>The metadata for a service class provides the information Angular needs to make it available
-  to components through Dependency Injection (DI).</p>
+    <div class="col-sm-12 col-md-12 col-lg-12">
 
-  <p>An app's components typically define many views, arranged hierarchically. Angular provides
-  the Router service to help you define navigation paths among views. The router provides
-  sophisticated in-browser navigational capabilities.</p>
+      <mat-card>
+        <form>
+          <div class="row">
+            <div class="col-2">
+              <h2 mat-dialog-title>Sub Question</h2>
+            </div>
+            <div class="col-10">
+              <mat-dialog-actions align="end" style="margin-bottom: 50px">
+                <button mat-button class="green-btn" mat-dialog-close>Add Sub Question</button>
+              </mat-dialog-actions>
+            </div>
+          </div>
+
+          <div class="row">
+
+            <div class="col-4">
+              <mat-form-field floatLabel="never" appearance="standard">
+                <label for="SubQuestionId">Sub Question Id</label>
+                <input type="number" id="SubQuestionId" matInput>
+              </mat-form-field>
+            </div>
+
+            <div class="col-4">
+              <label for="SubQuestionType" class="form-label">Sub Question Type</label> <br>
+              <mat-form-field floatLabel="never" appearance="standard">
+                <mat-label>Select Your Type..</mat-label>
+                <mat-select id="SubQuestionType" formControlName="SubQuestionType">
+                  <mat-option *ngFor="let food of foods" [value]="food.value">
+                    {{food.viewValue}}
+                  </mat-option>
+                </mat-select>
+              </mat-form-field>
+            </div>
+
+            <div class="col-4">
+              <mat-form-field floatLabel="never" appearance="standard">
+                <label for="SubMainQuestionMarks">Sub Question Marks</label>
+                <input type="number" id="SubMainQuestionMarks" matInput>
+              </mat-form-field>
+            </div>
+
+
+
+            <div class="col-12">
+              <mat-form-field floatLabel="never" appearance="standard">
+                <label for="SubQuestion">Sub Question</label>
+                <input type="text" id="SubQuestion" matInput>
+              </mat-form-field>
+            </div>
+
+            <div class="col-12">
+              <mat-form-field floatLabel="never" appearance="standard">
+                <label for="IdealAnswer2">Ideal Answer</label>
+                <input type="text" id="IdealAnswer2" matInput>
+              </mat-form-field>
+            </div>
+
+          </div>
+
+        </form>
+      </mat-card>
+
+    </div>
+  </div>
+
+
 </mat-dialog-content>
-<mat-dialog-actions align="end">
-  <button mat-button mat-dialog-close>Cancel</button>
-  <button mat-button [mat-dialog-close]="true" cdkFocusInitial>Install</button>
-</mat-dialog-actions>
+

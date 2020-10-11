@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import {MatDialog} from '@angular/material/dialog';
 
+import {AddQuestionModalComponent} from '../add-question-modal/add-question-modal.component';
 @Component({
   selector: 'app-add-question',
   templateUrl: './add-question.component.html',
@@ -8,9 +10,17 @@ import { Component, OnInit } from '@angular/core';
 export class AddQuestionComponent implements OnInit {
   displayedColumns = ['edit', 'Question', 'MainQuestionMarks', 'SubQuestionTotal', 'QuestionType'];
   dataSource = ELEMENT_DATA;
-  constructor() { }
+  constructor(public dialog: MatDialog) { }
 
   ngOnInit(): void {
+  }
+
+  openDialog() {
+    const dialogRef = this.dialog.open(AddQuestionModalComponent);
+
+    dialogRef.afterClosed().subscribe(result => {
+      console.log(`Dialog result: ${result}`);
+    });
   }
 
 }

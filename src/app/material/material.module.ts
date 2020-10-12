@@ -16,6 +16,7 @@ import {MatInputModule} from '@angular/material/input';
 import {MatRadioModule} from '@angular/material/radio';
 import {MatCheckboxModule} from '@angular/material/checkbox';
 import {MatDialogModule} from '@angular/material/dialog';
+import {MatMenuModule} from '@angular/material/menu';
 
 
 @NgModule({
@@ -36,7 +37,8 @@ import {MatDialogModule} from '@angular/material/dialog';
     MatInputModule,
     MatRadioModule,
     MatCheckboxModule,
-    MatDialogModule
+    MatDialogModule,
+    MatMenuModule
   ],
   exports: [
     MatToolbarModule,
@@ -53,7 +55,8 @@ import {MatDialogModule} from '@angular/material/dialog';
     MatInputModule,
     MatRadioModule,
     MatCheckboxModule,
-    MatDialogModule
+    MatDialogModule,
+    MatMenuModule
   ]
 })
 
